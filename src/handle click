@@ -1,0 +1,14 @@
+App.jsx
+import { useState } from "react";
+export default function App() {
+  const [message, setMessage] = useState("Waiting...");
+  function handleClick() {
+    setMessage("Button clicked successfully!");
+  }
+  return (
+    <div>
+      <button onClick={handleClick}>Click Me</button>
+      <p>{message}</p>
+    </div>
+  );
+}
